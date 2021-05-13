@@ -1,9 +1,9 @@
 # Product-Api
 
-###  This project demonstrates how to save data into tesxt or json file 
+###  This project demonstrates how to save data into text or json file 
 ### and how to retrieve the data for display by Ajax 
 #### The Project dexcriptionis is as follows
-...
+```
 A company sells a product from it sales page.
 Customers can order for this product from the sales page.
 Each order will capture detail information about an order, 
