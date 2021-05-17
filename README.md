@@ -1,4 +1,4 @@
-# Product-Api
+# Product-API
 
 ###  This project demonstrates how to save data into text or json file 
 ### and how to retrieve the data for display by Ajax 
