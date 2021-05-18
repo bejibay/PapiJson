@@ -1,8 +1,10 @@
 <?php
+// The order details is obtained when a page is loaded
+// or when the update orders button is loaded
 <html>
-<head><title>Products Order DETAILS</title>
+<head><title>Products Order Details</title>
 </head>
-<body>
+<body onload="loadOrders()">
 <div>
 <button type="button" onclick="loadOrders()" >Update Orders</button>
 </div>
