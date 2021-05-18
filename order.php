@@ -32,13 +32,14 @@ file_put_contents($newarraydata);
 
 ?>
 <html>
-<head><title>PRODUCTS DETAILS</title>
+<head><title>PRODUCT A ORDER DETAILS</title>
 </head>
-
 <body>
+<h1>Product A</h1>
+<h2>Place Your Order</h2>
 <form method="post" action="<?php $_SERVER['PHP_SELF']?>"
-<label for="name"> Product Name</label>
-<Input type="text" name="name" id="name">
+<label for="customer">Customer Name</label>
+<Input type="text" name="customer" id="name">
 <label for="quantity"> Product Quantity</label>
 <Input type="text" name="quantity" id="quantity">
 <label for="price"> Price</label>
