@@ -3,31 +3,47 @@
 // collect form fields data
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
-$name=trim(strip_tags("$_POST['name']));
-$quantity=trim(strip_tags("$_POST['quantity']));
-$price=trim(strip_tags("$_POST['price']));
-$value=trim(strip_tags("$_POST['value']));
+$name=testinput($_POST['name']);
+$quantity=testinput($_POST['quantity']);
+$price=testinput($_POST['price']);
+$value=testinput($_POST['value']);
 $date=time();
 $value=$quantity*$price;
-$submit=trim(strip-tags($_POST['submit']));
+$submit=$_POST['submit']);
 
 
 //put form fields into array'
-$formdata=array('pname' =>$name, 'pquantity'=>$quantity, 'pprice'=>$price, 'pvalue'=>$value, 'pdate'=>$date);
+$formdata=array('name' =>$name, 'quantity'=>$quantity, 'price'=>$price, 'value'=>$value, 'date'=>$date);
 
 //convert the array into json 
 $jsondata=json_encode($formdata);
-file_put_contents("json.txt", $jsondata);
+file_put_contents("product.txt", $jsondata);
 
-// retreive data from text file
-$arraydata=file_get_contents("json.txt");
+// retrieve data from text file
+$jsondata=file_get_contents("product.txt");
 
 //convert json into array
-$newarraydata=json_decode($arraydata);
+$jsondata=json_decode($jsondata);
+// create an array and make json data as an element
 
-// append new form data 
-$newraaraydata[]=$formdata;
-file_put_contents($newarraydata);
+$newformdata[]=$jsondata;
+$newformdata[]=$formdata:
+
+// save the new form data into the product.text file as
+// a string
+
+file_put_contents(json_decode($newformdata));
+
+// get the content out of the file for output
+json_decode(file_get_contents("product.text")):
+}
+// function to validate input data
+function testdata($data){
+$data=trim($data);
+$data=stripslashes($data);
+$data=HTML special chars($data);
+return $data;
+
 }
 
 ?>
