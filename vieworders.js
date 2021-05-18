@@ -2,22 +2,22 @@
 //declare variables
 var xhr, obj, table, text, parsejson;
 
-//request data from json text file using xhr ajax to convert json data to Javascript object
+//request data from vieworders.php file using ajax 
+//and convert json data to Javascript object
 
-funclon loadproducts(){
+funclon loadOrders(){
  xhr= new XLMHttpRequest;
 xhr.onreadystatechange=function(){
 if(this.readyState== 4 && this.status==200){
-obj= this.responseText;
+obj= this.responseText;}};
 
-xhr.open( "GET", "json.txt", "true");
+xhr.open( "GET", "vieworders.php", "true");
 
 xhr.send();
 }
-}
 
-//convert json array string data to Javascript array object
-parsejson= obj.parseJSON();
+//convert json array string data to Javascript object
+parsejson= JSON.parse(obj);
 table="<table>;
 table+="<tr><th>Product Name</th><th><Product Quantity</th><th>Price</th><th>Value</th><th>Date</th></tr>";
 for(1=0; 1< parsejson.length; 1++){
