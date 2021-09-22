@@ -1,4 +1,4 @@
-# Product-API
+# API To Save, Retrieve and Display Customers Orders (PHP and AJAX)
 
 ###  This project demonstrates how to save data into text or json file 
 ### and how to retrieve the data for display by Ajax 
