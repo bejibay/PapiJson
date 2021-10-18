@@ -2,7 +2,7 @@
 
 ## Technologies
 
-** PHP,Javascript,HTML,CSS
+* PHP,Javascript,HTML,CSS
 
 ## Objectives
 * Customers can order for products through the sales page
