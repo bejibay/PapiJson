@@ -16,4 +16,4 @@
 * Orders are retrieved through vieworders.php page
 ## Front end Application
 ...
-This is built with HTML, CSS and Javascript
+The UI is built with HTML, CSS and Javascript
