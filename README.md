@@ -1,7 +1,9 @@
 # Product API In PHP and AJAX
 
 ## Technologies
+
 ** PHP, Javascript, HTML, CSS
+
 ## Objectives
 * Customers can order for products through the sales page
 * Orders from customers are saved into text or json file 
