@@ -15,5 +15,7 @@
 * Orders are saved into product.txt file.
 * Orders are retrieved through vieworders.php page
 ## Front end Application
-...
+
+```
 The UI is built with HTML, CSS and Javascript
+```
