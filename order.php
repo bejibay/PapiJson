@@ -6,12 +6,10 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 $name=testinput($_POST['name']);
 $quantity=testinput($_POST['quantity']);
 $price=testinput($_POST['price']);
+$value=$quantity*$price;
 $value=testinput($_POST['value']);
 $orderdate=testinput($_POST['orderdate']);
-$value=$quantity*$price;
 $submit=$_POST['submit']);
-
-
 //put form fields into array'
 $formdata=array('name' =>$name, 'quantity'=>$quantity, 'price'=>$price, 'value'=>$value, 'orderdate'=>$orderdate);
 
@@ -41,7 +39,7 @@ json_decode(file_get_contents("product.text")):
 function testdata($data){
 $data=trim($data);
 $data=stripslashes($data);
-$data=HTML special chars($data);
+$data=htmlspecialchars($data);
 return $data;
 
 }
@@ -49,6 +47,8 @@ return $data;
 ?>
 <html>
 <head><title>PRODUCT A ORDER DETAILS</title>
+<meta name="viewport" content="width=device-width;initial-scale=1.0">
+<link rel="stylesheet" href="orderproduct.css">
 </head>
 <body>
 <h1>Product A</h1>
@@ -61,7 +61,7 @@ return $data;
 <label for="price"> Price</label>
 <Input type="text" name="price" id="price">
 <label for="value"> Value</label>
-<Input type="text" name="value" id="value">
+<Input type="text" name="value" id="value" value="<?php echo $value;?>">
 <label for="date"> Date</label>
 <Input type="date" name="orderdate" id="date">
 <label for="submit"> Submit</label>
