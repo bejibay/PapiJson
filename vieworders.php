@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="orderproduct.css">
 </head>
 <body>
+<div id="display"></div>
 <div>
-<button type="button" onclick="loadOrders()" >Update Orders</button>
+<button type="button" onclick="loadOrders()">Refresh Orders</button>
 </div>
 <script src="vieworders.js"></script>
 </body>
