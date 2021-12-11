@@ -53,7 +53,7 @@ return $data;
 <body>
 <h1>Product A</h1>
 <h2>Place Your Order</h2>
-<form method="post" action="<?php htmlspecialchar($_SERVER['PHP_SELF']);?>"
+<form method="post" action="<?php htmlspecialchars($_SERVER['PHP_SELF']);?>"
 <label for="customer">Customer Name</label>
 <Input type="text" name="customer" id="name">
 <label for="quantity"> Product Quantity</label>
