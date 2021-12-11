@@ -3,6 +3,8 @@
 // or when the update orders button is clicked
 <html>
 <head><title>Products Order Details</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="orderproduct.css">
 </head>
 <body>
 <div>
