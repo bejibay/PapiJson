@@ -7,13 +7,13 @@ $name=testinput($_POST['name']);
 $quantity=testinput($_POST['quantity']);
 $price=testinput($_POST['price']);
 $value=testinput($_POST['value']);
-$date=time();
+$orderdate=testinput($_POST['orderdate']);
 $value=$quantity*$price;
 $submit=$_POST['submit']);
 
 
 //put form fields into array'
-$formdata=array('name' =>$name, 'quantity'=>$quantity, 'price'=>$price, 'value'=>$value, 'date'=>$date);
+$formdata=array('name' =>$name, 'quantity'=>$quantity, 'price'=>$price, 'value'=>$value, 'orderdate'=>$orderdate);
 
 //convert the array into json 
 $jsondata=json_encode($formdata);
@@ -23,7 +23,7 @@ file_put_contents("product.txt", $jsondata);
 $jsondata=file_get_contents("product.txt");
 
 //convert json into array
-$jsondata=json_decode($jsondata);
+$jsondata=json_decode($jsondata,true);
 // create an array and make json data as an element
 
 $newformdata[]=$jsondata;
@@ -53,7 +53,7 @@ return $data;
 <body>
 <h1>Product A</h1>
 <h2>Place Your Order</h2>
-<form method="post" action="<?php $_SERVER['PHP_SELF']?>"
+<form method="post" action="<?php htmlspecialchar($_SERVER['PHP_SELF']);?>"
 <label for="customer">Customer Name</label>
 <Input type="text" name="customer" id="name">
 <label for="quantity"> Product Quantity</label>
@@ -63,7 +63,7 @@ return $data;
 <label for="value"> Value</label>
 <Input type="text" name="value" id="value">
 <label for="date"> Date</label>
-<Input type="text" name="date" id="date">
+<Input type="date" name="orderdate" id="date">
 <label for="submit"> Submit</label>
 <Input type="text" name="submit" id="submit" value="ClicK to Update" onclick="function loadproducts() >
 
