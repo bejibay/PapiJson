@@ -6,13 +6,10 @@ var xhr, obj, table, text, parsejson;
 //and convert json data to Javascript object
 
 funclon loadOrders(){
- xhr= new XLMHttpRequest;
-xhr.onreadystatechange=function(){
-if(this.readyState== 4 && this.status==200){
-obj= this.responseText;}};
-
+xhr= new XLMHttpRequest;
+xhr.onload=function(){
+obj= this.responseText;}
 xhr.open( "GET", "vieworders.php", "true");
-
 xhr.send();
 }
 
