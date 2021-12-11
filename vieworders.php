@@ -4,7 +4,7 @@
 <html>
 <head><title>Products Order Details</title>
 </head>
-<body onload="loadOrders()">
+<body>
 <div>
 <button type="button" onclick="loadOrders()" >Update Orders</button>
 </div>
