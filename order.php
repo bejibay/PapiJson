@@ -1,3 +1,6 @@
+<?php
+	echo "Hello, world!!!!"
+?>
 ﻿
 <?php
 // collect form fields data
@@ -9,7 +12,7 @@ $price=testinput($_POST['price']);
 $value=$quantity*$price;
 $value=testinput($_POST['value']);
 $orderdate=testinput($_POST['orderdate']);
-$submit=$_POST['submit']);
+$submit=$_POST['submit'];
 //put form fields into array'
 $formdata=array('name' =>$name, 'quantity'=>$quantity, 'price'=>$price, 'value'=>$value, 'orderdate'=>$orderdate);
 
@@ -25,7 +28,7 @@ $jsondata=json_decode($jsondata,true);
 // create an array and make json data as an element
 
 $newformdata[]=$jsondata;
-$newformdata[]=$formdata:
+$newformdata[]=$formdata;
 
 // save the new form data into the product.text file as
 // a string
@@ -33,7 +36,7 @@ $newformdata[]=$formdata:
 file_put_contents(json_decode($newformdata));
 
 // get the content out of the file for output
-json_decode(file_get_contents("product.text")):
+json_decode(file_get_contents("product.text"));
 }
 // function to validate input data
 function testdata($data){
