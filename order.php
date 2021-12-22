@@ -31,7 +31,7 @@ $newformdata[]=$formdata;
 file_put_contents(products.txt,json_decode($newformdata));
 
 // get the content out of the file for output
-json_decode(file_get_contents("product.text"));
+json_decode(file_get_contents("product.txt"));
 }
 // function to validate input data
 function testdata($data){
