@@ -60,8 +60,8 @@ return $data;
 <Input type="text" name="price" id="price">
 <label for="value"> Value</label>
 <Input type="text" name="value" id="value" value="<?php echo $value;?>">
-<label for="date"> Date</label>
-<Input type="date" name="orderdate" id="date">
+<label for="orderdate"> Date</label>
+<Input type="date" name="orderdate" id="orderdate">
 <label for="submit"> Submit</label>
 <Input type="text" name="submit" id="submit" value="ClicK to Update" onclick="function loadproducts() >
 
