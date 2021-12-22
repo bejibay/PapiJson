@@ -1,7 +1,4 @@
-<?php
-	echo "Hello, world!!!!"
-?>
-﻿
+
 <?php
 // collect form fields data
 
