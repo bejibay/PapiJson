@@ -1,7 +1,5 @@
-
 <?php
 // collect form fields data
-
 if($_SERVER['REQUEST_METHOD']=='POST'){
 $name=testinput($_POST['name']);
 $quantity=testinput($_POST['quantity']);
@@ -22,15 +20,15 @@ $jsondata=file_get_contents("product.txt");
 
 //convert json into array
 $jsondata=json_decode($jsondata,true);
-// create an array and make json data as an element
 
+// create an array and make json data as an element
 $newformdata[]=$jsondata;
 $newformdata[]=$formdata;
 
 // save the new form data into the product.text file as
 // a string
 
-file_put_contents(json_decode($newformdata));
+file_put_contents(products.txt,json_decode($newformdata));
 
 // get the content out of the file for output
 json_decode(file_get_contents("product.text"));
