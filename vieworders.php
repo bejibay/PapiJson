@@ -1,16 +1,15 @@
 <?php
-// The order details is obtained when a page is loaded
-// or when the update orders button is clicked
+// All orders are retrieved when this page has been loaded
+<!DOCTYPE html>
 <html>
-<head><title>Products Order Details</title>
+<head>
+<title>Products Order Details</title>
+<meta name = "description" content ="Products order details">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="orderproduct.css">
+<link rel="stylesheet" href="order.css">
 </head>
-<body>
+<body onload ="loadOrders()">
 <div id="display"></div>
-<div>
-<button type="button" onclick="loadOrders()">Refresh Orders</button>
-</div>
 <script src="vieworders.js"></script>
 </body>
 </html>
