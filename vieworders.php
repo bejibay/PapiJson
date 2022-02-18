@@ -1,5 +1,7 @@
 <?php
 // All orders are retrieved when this page has been loaded
+?
+>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,4 +15,4 @@
 <script src="vieworders.js"></script>
 </body>
 </html>
-?>
+
