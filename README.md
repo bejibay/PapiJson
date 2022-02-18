@@ -1,21 +1,18 @@
-# Product API In PHP and AJAX
+# PapiJson
+* PapiJson is a simple application which allows
+a custom to place an oreder for ether of a company 
+product. All orders are saved in a json or text file.
+* Built with PHP, JavaScript, HTML and CSS, all
+orders are placed from home page, while all orders
+are retrieved from vieworders.php with JavaScript
+aJAX
 
-## Technologies
+## Scripts
+* index.php for making orders.
+* vieworders.php for retrieving customers orders 
+* product.txt/product.json file for orders storage
 
-* PHP,Javascript,HTML,CSS
-
-## Objectives
-* Customers can order for products through the sales page
-* Orders from customers are saved into text or json file 
-* Products are retrieved and displayed by AJAX API 
-* Company can view all products ordered from customers
-
-## Functions
-* Each order is made through order.php page 
-* Orders are saved into product.txt file.
-* Orders are retrieved through vieworders.php page
-## Front end Application
-
-```
-The UI is built with HTML, CSS and Javascript
-```
+## Application
+The use of json file for storing data allows
+data interchange between the server and frontend
+applications.
