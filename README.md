@@ -1,7 +1,7 @@
 # PapiJson
 * PapiJson is a simple application which allows
-a custom to place an oreder for ether of a company 
-product. All orders are saved in a json or text file.
+a custom to place an order for ether of a company 
+products. All orders are saved in a json or text file.
 * Built with PHP, JavaScript, HTML and CSS, all
 orders are placed from home page, while all orders
 are retrieved from vieworders.php with JavaScript
