@@ -39,10 +39,10 @@ $data = array();
 
 $formdata=array('name' =>$name, 'quantity'=>$quantity, 'price'=>$price, 'value'=>$value, 'orderdate'=>$orderdate);
 
-$data = array_push($data,$formdata);
+$savedata = array_push($data,$formdata);
 
 //convert the array into json 
-$jsondata=json_encode($data);
+$jsondata=json_encode($savedata);
 
 //save data into file
 file_put_contents("product.txt", $jsondata);
