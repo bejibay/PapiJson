@@ -1,4 +1,11 @@
 <?php
+// set error variables to global variables
+$GLOBAL['nameError'];
+$GLOBAL['quantityError'];
+$GLOBAL['priceError'];
+$GLOBAL['valueError'];
+$GLOBAL['dateError'];
+
 //function to validate input data
 
 function testdata($data){
@@ -10,13 +17,20 @@ return $data;
 
 // collect form fields data
 if($_SERVER['REQUEST_METHOD']=='POST'){
-if(!empty($name)&&(is_int($name))$name=testinput($_POST['name']);
+if(!empty($name))$name=testinput($_POST['name']);
 if(!empty($quantity)&&(is_int($quantity))$quantity=testinput($_POST['quantity']);
 if(!empty($price)&&(is_int($price))$price=testinput($_POST['price']);
 $value=$quantity*$price;
 if(!empty($value)&&(is_int($value))$value=testinput($_POST['value']);
 if(!empty($orderdate))$orderdate=testinput($_POST['orderdate']);
 $submit=$_POST['submit'];
+
+//setting error level for form data
+if(empty($name)) $nameError ="invalid entry";
+if(empty($quantity)||!is_int(quantity)) $quantityError ="invalid entry";
+if(empty($price)||!is_int($price)) $priceError ="invalid entry";
+if(empty($value)||!is_int($value)) $valueError ="invalid entry";
+if(empty($date)) $dateError ="invalid entry";
 
 //declare an array to store each form post
 $data = array();
