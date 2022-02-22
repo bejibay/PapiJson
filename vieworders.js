@@ -9,7 +9,7 @@ function loadOrders(){
 xhr= new XLMHttpRequest;
 xhr.onload=function(){
 obj= this.responseText;}
-xhr.open( "GET", "vieworders.php", "true");
+xhr.open( "GET", "processorders.php", "true");
 xhr.send();
 
 //convert json array string data to Javascript object
