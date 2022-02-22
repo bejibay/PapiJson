@@ -53,6 +53,8 @@ $jsondata=file_get_contents("product.txt");
 //convert json into array
 $jsondata=json_decode($jsondata,true);
 
+//convert array to Json for external data exchange
+$jsondata = Json_encode($jsondata);
 }
 
 include "orderform.php";
