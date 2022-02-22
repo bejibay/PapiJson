@@ -1,5 +1,6 @@
+<?php include "orders.php";?>
 <html>
-<head><title>PRODUCT A ORDER DETAILS</title>
+<head><title>PRODUCT$ ORDER DETAILS</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" href="orderproduct.css">
 </head>
