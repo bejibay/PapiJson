@@ -8,6 +8,13 @@
 <h1>Product A</h1>
 <h2>Place Your Order</h2>
 <form method="post" action="<?php htmlspecialchars($_SERVER['PHP_SELF']);?>"
+<div>
+<?php echo $nameError;?>
+<?php echo $quantityError;?>
+<?php echo $priceError;?>
+<?php echo $valueError;?>
+<?php echo $dateError;?>
+</div>
 <label for="customer">Customer Name</label>
 <Input type="text" name="customer" id="name">
 <label for="quantity"> Product Quantity</label>
