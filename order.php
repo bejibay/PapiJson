@@ -3,11 +3,11 @@
 ?>
 <?php
 // set error variables to global variables
-$GLOBAL['nameError'] =
-$GLOBAL['quantityError'] =
-$GLOBAL['priceError'] =
-$GLOBAL['valueError'] =
-$GLOBAL['dateError'] = 0;
+$GLOBALS['nameError'] =
+$GLOBALS['quantityError'] =
+$GLOBALS['priceError'] =
+$GLOBALS['valueError'] =
+$GLOBALS['dateError'] = 0;
 
 //function to validate input data
 
