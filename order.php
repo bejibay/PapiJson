@@ -1,6 +1,4 @@
-<?php
-	echo "Hello, world!!!!"
-?>
+
 <?php
 // set error variables to global variables
 $GLOBALS['nameError'] =
