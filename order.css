@@ -1,6 +1,6 @@
+*{box-sizing: border-box;}
 #display{
-width : 500px;
-font-size :18px;
+width : 100%;
 text-align : center;
 padding : 10px 15px;
 }
@@ -8,4 +8,8 @@ padding : 10px 15px;
 label,input {
 display : block
 width : 100px;
+}
+@media only screen and (min-width: 600px){
+#display{width: 550px
+}
 }
