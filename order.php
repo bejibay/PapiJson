@@ -1,10 +1,13 @@
 <?php
+	echo "Hello, world!!!!"
+?>
+<?php
 // set error variables to global variables
-$GLOBAL['nameError'];
-$GLOBAL['quantityError'];
-$GLOBAL['priceError'];
-$GLOBAL['valueError'];
-$GLOBAL['dateError'];
+$GLOBAL['nameError'] =
+$GLOBAL['quantityError'] =
+$GLOBAL['priceError'] =
+$GLOBAL['valueError'] =
+$GLOBAL['dateError'] = 0;
 
 //function to validate input data
 
@@ -18,10 +21,10 @@ return $data;
 // collect form fields data
 if($_SERVER['REQUEST_METHOD']=='POST'){
 if(!empty($name))$name=testinput($_POST['name']);
-if(!empty($quantity)&&(is_int($quantity))$quantity=testinput($_POST['quantity']);
-if(!empty($price)&&(is_int($price))$price=testinput($_POST['price']);
+if(!empty($quantity)&& is_int($quantity))$quantity=testinput($_POST['quantity']);
+if(!empty($price)&& is_int($price))$price=testinput($_POST['price']);
 $value=$quantity*$price;
-if(!empty($value)&&(is_int($value))$value=testinput($_POST['value']);
+if(!empty($value)&& is_int($value))$value=testinput($_POST['value']);
 if(!empty($orderdate))$orderdate=testinput($_POST['orderdate']);
 $submit=$_POST['submit'];
 
