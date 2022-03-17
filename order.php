@@ -5,7 +5,7 @@ $GLOBALS['nameError'] =
 $GLOBALS['quantityError'] =
 $GLOBALS['priceError'] =
 $GLOBALS['valueError'] =
-$GLOBALS['dateError'] = 0;
+$GLOBALS['dateError'] = "";
 
 //function to validate input data
 
