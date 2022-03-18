@@ -1,8 +1,8 @@
 <?php include "functions.php";?>
 <?php 
 $action = $_GET['action'];
-if($action == 'views'){
-productViews();}
+if($action == 'order'){
+productOrder();}
 else{ homepage();}
 
 ?>
