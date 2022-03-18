@@ -6,7 +6,7 @@ var xhr, obj, table, text, parsejson;
 //and convert json data to Javascript object
 
 function loadOrders(){
-xhr= new XLMHttpRequest;
+xhr= new XMLHttpRequest();
 xhr.onload=function(){
 obj= this.responseText;}
 xhr.open( "GET", "product.txt", "true");
