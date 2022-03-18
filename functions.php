@@ -15,7 +15,7 @@ $data=stripslashes($data);
 $data=htmlspecialchars($data);
 return $data;
 }
-
+function productOrder{
 // collect form fields data
 if($_SERVER['REQUEST_METHOD']=='POST'){
 if(!empty($name))$name=testinput($_POST['name']);
@@ -59,6 +59,11 @@ $jsondata = Json_encode($jsondata);
 }
 
 include "orderform.php";
+}
+
+function homepage(){
+include "homepage.html"
+}
 ?>
 
 
