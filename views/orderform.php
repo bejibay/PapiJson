@@ -1,8 +1,7 @@
-<?php include "orders.php";?>
 <html>
 <head><title>PRODUCT$ ORDER DETAILS</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="order.css">
+<link rel="stylesheet" href="./order.css">
 </head>
 <body>
 <h1>Product A</h1>
@@ -26,7 +25,7 @@
 <label for="orderdate"> Date</label>
 <Input type="date" name="orderdate" id="orderdate">
 <label for="submit"> Submit</label>
-<Input type="text" name="submit" id="submit" value="ClicK to Update" onclick="function loadproducts() >
+<Input type="text" name="submit" id="submit" value="ClicK to Order" >
 
 </form>
 </body>
