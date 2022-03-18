@@ -1,5 +1,1 @@
-{
-{"name":"Gege","quantity":2,"price":50,"value":100,"date":"21/02/2023"},
-{"name":"king","quantity":3,"price":50,"value":150,"date":"21/02/2023"}
-)
-}
+
