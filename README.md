@@ -3,14 +3,14 @@
 a customer to place an order for the product of a company. 
 All orders are saved in a json or text file.
 * Built with PHP, JavaScript, HTML and CSS, all
-orders are placed from home page, while all orders
-are retrieved from vieworders.php with JavaScript
+orders are placed from order page, while all orders
+are retrieved from homepage with JavaScript
 aJAX
 
 ## Scripts
-* index.php for making orders.
-* vieworders.php for retrieving customers orders 
-* product.txt/product.json file for orders storage
+* index.php for for switching actions between placing
+orders and viewing orders
+* product.txt/product.json file for storage of orders
 
 ## Application
 The use of json file for storing data allows
