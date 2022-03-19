@@ -62,7 +62,7 @@ include "views/rderform.php";
 }
 
 function homepage(){
-include "homepage.html"
+include "views/homepage.html"
 }
 ?>
 
