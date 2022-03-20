@@ -51,7 +51,7 @@ file_put_contents("product.txt", $jsondata);
 echo "data saved into text file";
 }
 }
-}
+
 
 // collect form fields data
 // if additional data us saved into text file
@@ -96,9 +96,8 @@ $jsondata=json_encode($data);
 if(file_exists(product.text)){
 file_put_contents("product.txt", $data);
 echo "data saved into text file";
-
 }
-
+}
 include "views/rderform.php";
 }
 
