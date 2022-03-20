@@ -12,7 +12,7 @@ $GLOBALS['dateError'] = "";
 function testdata($data){
 $data=trim($data);
 $data=stripslashes($data);
-$data=htmlspecialchars($data);
+$data=strip_tags($data);
 return $data;
 }
 function productOrder{
@@ -24,13 +24,14 @@ if(!empty($price)&& is_int($price))$price=testinput($_POST['price']);
 $value=$quantity*$price;
 if(!empty($value)&& is_int($value))$value=testinput($_POST['value']);
 if(!empty($orderdate))$orderdate=testinput($_POST['orderdate']);
-$submit=$_POST['submit'];
+
 
 //setting error level for form data
-if(empty($name)) $nameError ="invalid entry";
-if(empty($quantity)||!is_int(quantity)) $quantityError ="invalid entry";
-if(empty($price)||!is_int($price)) $priceError ="invalid entry";
-if(empty($value)||!is_int($value)) $valueError ="invalid entry";
+if(empty($name) && !preg_match("/^[A-Za-z""]*$/",$name)) $nameError ="invalid entry only 
+digits and space allowed";
+if(empty($quantity) && !is_int(quantity)) $quantityError ="invalid entry only numbers allowed";
+if(empty($price) && !is_int($price)) $priceError ="invalid entry only numbers allowed";
+if(empty($value) && !is_int($value)) $valueError ="invalid entry only numbers allowed";
 if(empty($date)) $dateError ="invalid entry";
 
 //declare an array to store each form post
