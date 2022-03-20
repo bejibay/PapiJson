@@ -19,7 +19,7 @@
 <label for="quantity"> Product Quantity</label>
 <Input type="text" name="quantity" id="quantity">
 <label for="price"> Price</label>
-<Input type="text" name="price" id="price">
+<Input type="text" name="price" id="price" value="50">
 <label for="value"> Value</label>
 <Input type="text" name="value" id="value" value="<?php echo $value;?>">
 <label for="orderdate"> Date</label>
