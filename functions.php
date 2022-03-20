@@ -54,7 +54,7 @@ echo "data saved into text file";
 
 
 // collect form fields data
-// if additional data us saved into text file
+// if additional data is saved into text file
 if($_SERVER['REQUEST_METHOD']=='POST'){
 if(!empty($name))$name=testinput($_POST['name']);
 if(!empty($quantity)&& is_int($quantity))$quantity=testinput($_POST['quantity']);
@@ -117,10 +117,7 @@ include "views/homepage.html"
 
 
 
-function homepage(){
-include "views/homepage.html"
-}
-?>
+
 
 
 
