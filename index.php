@@ -1,6 +1,6 @@
 <?php include "functions.php";
-$action = $_GET['action'];
+$action = isset($_GET['action']);
 if($action == 'order'){
 productOrder();}
-else{ homepage();}
+else{homepage();}
 ?>
