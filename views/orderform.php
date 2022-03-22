@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><title>PRODUCT$ ORDER DETAILS</title>
+<head><title>PRODUCT ORDER DETAILS</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" href="./order.css">
 </head>
