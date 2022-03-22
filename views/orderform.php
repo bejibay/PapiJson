@@ -7,7 +7,7 @@
 <body>
 <h1>Product A</h1>
 <h2>Place Your Order</h2>
-<form method="post" action="<?php htmlspecialchars($_SERVER['PHP_SELF']);?>"
+<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
 <div>
 <?php echo $nameError;?>
 <?php echo $quantityError;?>
