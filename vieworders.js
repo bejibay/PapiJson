@@ -21,7 +21,7 @@ for(i=0; i< parsejson.length; i++){
 text=parsejson[i];
 table+="<tr><td>text.name</td><td>text.quantity</td><td>text.price</td><td>text.value</td><td>text.date</td></td>";
 table+="</table>";
-document.getElementById ("display"),innerHTML=table;
+document.getElementById ("text"),innerHTML=table;
 }
 
 
